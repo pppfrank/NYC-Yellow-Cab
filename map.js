@@ -67,7 +67,7 @@ map.on('load', function() {	// the event listener that does some code after the 
 	  if (district.length > 0) {	// if statement to make sure the following code is only added to the info window if the mouse moves over a state
 	    document.getElementById('info-window-body').innerHTML = '<p>Millions of cab trips picture the busy New York City. </p><p>Borough:  ' + district[0].properties.boro_name + '</p>';
 	  } else {
-	    document.getElementById('info-window-body').innerHTML = '<p>Millions of cab trips picture the busy New York City. </p><p>Hover over a park or click on a bus stop to learn more about it.</p>';
+	    document.getElementById('info-window-body').innerHTML = '<p>Millions of cab trips picture the busy New York City. </p><p>Hover over a district or click on a data point to learn more about it.</p>';
 	  }
 	
 	});
