@@ -15,9 +15,11 @@ var map = new mapboxgl.Map({
 	zoom: 12.14,
 	minZoom: 11,
 	maxZoom: 17,
-	style: 'mapbox://styles/jp9er/cj8xv0vmqhejm2rpql1wdtydb',
+	style: 'mapbox://styles/jp9er/cj8wmn0tm8rgk2smyvovx2e88',
     center: [-73.976689, 40.754383],
 });
+
+// map.addControl(new mapboxgl.FullscreenControl());
 
 // PARKS - INFO WINDOW CHANGES ON HOVER
 // code to add interactivity once map loads
@@ -70,6 +72,8 @@ map.on('load', function() {	// the event listener that does some code after the 
 	
 	});
 	
+
+	
 	
 	
 	
@@ -78,7 +82,7 @@ map.on('load', function() {	// the event listener that does some code after the 
   // container: 'map',
   // zoom: 15, // update this with your desired zoom level
      // center: [-71.97722138410576, -13.517379300798098]  // update this with the coordinates of your new map center
-  // style: 'mapbox://styles/jp9er/cj8xv0vmqhejm2rpql1wdtydb' 
+  // style: 'mapbox://styles/jp9er/cj8wmn0tm8rgk2smyvovx2e88' 
  // });
 // });
 
@@ -87,7 +91,7 @@ map.on('load', function() {	// the event listener that does some code after the 
   // container: 'map',
   // zoom: 15, // update this with your desired zoom level
      // center: [-71.97722138410576, -13.517379300798098]  // update this with the coordinates of your new map center
-  // style: 'mapbox://styles/jp9er/cj8xv0vmqhejm2rpql1wdtydb' 
+  // style: 'mapbox://styles/jp9er/cj8wmn0tm8rgk2smyvovx2e88' 
  // });
 // });
 
@@ -96,7 +100,7 @@ map.on('load', function() {	// the event listener that does some code after the 
   // container: 'map',
   // zoom: 15, // update this with your desired zoom level
      // center: [-71.97722138410576, -13.517379300798098]  // update this with the coordinates of your new map center
-  // style: 'mapbox://styles/jp9er/cj8xv0vmqhejm2rpql1wdtydb' 
+  // style: 'mapbox://styles/jp9er/cj8wmn0tm8rgk2smyvovx2e88' 
  // });
 // });
 
@@ -105,7 +109,7 @@ map.on('load', function() {	// the event listener that does some code after the 
   // container: 'map',
   // zoom: 15, // update this with your desired zoom level
      // center: [-71.97722138410576, -13.517379300798098]  // update this with the coordinates of your new map center
-  // style: 'mapbox://styles/jp9er/cj8xv0vmqhejm2rpql1wdtydb' 
+  // style: 'mapbox://styles/jp9er/cj8wmn0tm8rgk2smyvovx2e88' 
  // });
 // });
 
@@ -170,32 +174,6 @@ $('.modal .close-button').on('click', function() {
 	$('.modal').fadeToggle();  // toggles visibility of background screen when clicked (shows if hidden, hides if visible)	                        
 	
 });
-
-
-
-
-
-
-// $(function() {
-  
-  // // contact form animations
-  // $('#contact').click(function() {
-    // $('#contactForm').fadeToggle();
-  // })
-  // $(document).mouseup(function (e) {
-    // var container = $("#contactForm");
-
-    // if (!container.is(e.target) // if the target of the click isn't the container...
-        // && container.has(e.target).length === 0) // ... nor a descendant of the container
-    // {
-        // container.fadeOut();
-    // }
-  // });
-  
-// });
-
-
-
 
 
 
