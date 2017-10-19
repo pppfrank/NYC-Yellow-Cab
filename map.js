@@ -176,6 +176,17 @@ $('.modal .close-button').on('click', function() {
 });
 
 
+map.addControl(new mapboxgl.FullscreenControl());
+
+
+
+
+
+
+
+
+
+
 
 
 

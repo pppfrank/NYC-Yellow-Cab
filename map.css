@@ -56,7 +56,7 @@ p {
 
 #features {
   top: 20%;
-  height: 300px;
+  height: 200px;
   /* margin-top: 20px; */
   width: 190px;
   padding: 0 10 10 10;
@@ -165,15 +165,16 @@ p {
 
 .button-A {
     position: absolute;
-	left: 18%;
-	top: 13%;
+	left: 76%;
+	top: 420px;
     /* margin: 20px; */
-    background: #585191;
-    color: white;
+    background: white;
+    color: black;
+	width: 190px;
     border: none;
     /* border-radius: 10px; */
-    padding: 10px 20px;
-    font-size: larger;
+    padding: 5 10 5 10;
+    /* font-size: larger; */
     font-family: roboto;
     cursor: pointer;    
 }
@@ -295,6 +296,56 @@ textarea { height: 80px; resize: none; }
   margin: 30 0 0 0;
   /* height: 30px; */
 }
+
+
+
+
+
+
+
+
+
+ #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #menu a.active:hover {
+        background: #3074a4;
+    }
 
 
 
