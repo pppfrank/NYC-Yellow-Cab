@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>NYC Taxi Stories</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400i" rel="stylesheet">
+
+	<!-- Link to JQuery library (used for modal) -->	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Link to Mapbox GL JS library -->	
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+
+	<!-- Link to Mapbox GL JS css stylesheet -->	
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+
+	<!-- Link to our custom stylesheet -->	
+	<link rel="stylesheet" href="map.css">
+	
+	
+	
+</head>
+
+<body>
+
+
+
+	<!-- Map  -->	
+	<div id='map'></div>
+	
+
+	<div class='map-overlay' id='features'>
+		<h2>NYC Taxi Story</h2>
+		<div id='info-window-body'>
+			<p>Millions of cab trips picture the busy New York City. </p>
+			<p>Hover over a district or click on a data point to learn more about it.</p>
+		</div>
+	</div>
+	
+
+	<!-- Map legend (content populated by our javascript) -->	
+	<div class='map-overlay' id='legend'></div>	
+	
+	<!-- "About this map" modal (hidden by default) -->	
+	<div class='modal'>
+		<h2 class='modal-title'>About this project</h2>
+		<div class='modal-body'><p>This is an web map about NYC yellow cab stories created for the Scripting Civic Engagement Assignment I at the University of Virginia (Fall 2017), taught by Andrea Hansen Phillips.</p><p>Map data courtesy of <a href='https://www.mapbox.com/studio/'>Mapbox Studio</a> and the <a href='https://opendata.cityofnewyork.us/'>NYC Open Data</a></p><p>For questions or to improve this map, please contact me.</a></p>
+		
+		<p>&nbsp</p>
+		
+		
+		</div>
+		<button class='close-button'>&times;</button>  	<!-- A special "x" character (the multiply sign) used in close buttons -->	
+		
+		<form action="#">
+    <input placeholder="Name" type="text"  />
+    <input placeholder="Email" type="email"  />
+    <input placeholder="Subject" type="text"  />
+    <textarea placeholder="Comment"></textarea>
+    <input class="formBtn" type="submit" value="Submit" />
+    
+  </form>
+		
+		
+		
+	</div>
+	<div id='screen'></div>
+	
+		<div class='copyright' >&copy copyright 2017 Jiayue Peng</div>
+	
+
+	<!-- Button to hide or show "About this map" modal -->	
+	<button type='button' class='button-default' id='about'>About / Contact</button> <!-- Button to hide or show modal -->
+	
+	
+	<button class='button-A' id='buttonA'>Home</button> 
+	<button class='button-B' id='buttonB'>Manhattan</button> 
+	<button class='button-C' id='buttonC'>JFK</button> 
+	<button class='button-D' id='buttonD'>LGA</button> 
+	
+		
+</body>
+
+<!-- Link to our custom javascript -->	
+<script src="map.js"></script>
+ </html>

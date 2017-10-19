@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #C2C2C2; 
+  font: roboto;
+}
+
+h2
+ {
+  font-size: 1.2em;
+  font: roboto; 
+}
+
+h3 {
+  font-size: 1em;
+  font: roboto;
+}
+
+p {
+  font: roboto;
+  font-size: 0.85em;
+  text-align: left;
+  font: roboto;
+}
+
+.css-selector {
+  font-family: 'Roboto', serif;
+}
+
+
+
+
+/* Create a position for the map on the page */
+#map {
+  position: absolute;
+  top: 20%;
+  bottom: 15%;
+  
+  left: 18%;
+  Right: 25%;
+  border: 10px solid white;
+  
+}
+
+/* Set rules for how the map overlays (info box and legend) will be displayed on the page. */
+.map-overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 76%;
+  background: rgba(255, 255, 255, 0.8);
+  /* margin-right: 20px; */
+  font-family: roboto, sans-serif;
+  /* overflow: auto; */
+  /* border-radius: 3px; */
+}
+
+#features {
+  top: 20%;
+  height: 300px;
+  /* margin-top: 20px; */
+  width: 190px;
+  padding: 0 10 10 10;
+  left: 76%;
+}
+
+#legend {
+  padding: 10px;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+  line-height: 18px;
+  height: 70px;
+  /* margin-bottom: 40px; */
+  width: 190px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 100%;  /* adds a border radius, a value of 100% changes a box to a circle */
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+}
+
+/* Modals */
+#screen {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background-color: black;
+	opacity: 0.6;
+	z-index: 1;
+}
+
+.modal {
+	display: none;
+    width: 400px;
+    height: 480px;
+    position: absolute;
+    margin: 0 auto;
+    /* margin-top: 550; */
+    left: 0;
+	top: 27%;
+    right: 0;
+    background-color: white;
+    z-index: 200;
+    padding: 10 30 10 30;
+    font-family: roboto;
+}
+
+.modal .close-button {
+	color: #ccc;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px;
+	line-height: 30px;
+	font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal .close-button:hover { 
+	color: #bbb;
+}
+
+
+
+/* Pop-ups */
+
+.mapboxgl-popup-tip {
+	border-top-color: white !important;  /* the triangular shape at the bottom of the popup (tooltip) is formed by a thick border, where only the top border has a color, and the left, right, and bottom borders are transparent. Read more at https://css-tricks.com/snippets/css/css-triangle/ */
+}
+
+.mapboxgl-popup-content { 
+	background-color: white;
+    /* border: 1px solid blue; */
+    /* box-shadow: 3px 3px 8px rgba(0, 56, 125, 0.4);     */
+    font-family: roboto;
+    /* font-size: 1.2em; */
+	padding: 15 30 10 30;
+    /* color: blue; */
+}
+
+.mapboxgl-popup-close-button {
+    font-size: 20px;
+    /* color: blue; */
+}
+
+/* About this Map Button */
+.button-default {
+    position: absolute;
+	right: 25%;
+	top: 13%;
+    /* margin: 20px; */
+    background: #585191;
+    color: white;
+    border: none;
+    /* border-radius: 10px; */
+    padding: 10px 20px;
+    font-size: larger;
+    font-family: roboto;
+    cursor: pointer;    
+}
+
+.button-A {
+    position: absolute;
+	left: 18%;
+	top: 13%;
+    /* margin: 20px; */
+    background: #585191;
+    color: white;
+    border: none;
+    /* border-radius: 10px; */
+    padding: 10px 20px;
+    font-size: larger;
+    font-family: roboto;
+    cursor: pointer;    
+}
+
+.button-B {
+    position: absolute;
+	left: 460px;
+	top: 13%;
+    /* margin: 20px; */
+    background: #585191;
+    color: white;
+    border: none;
+    /* border-radius: 10px; */
+    padding: 10px 20px;
+    font-size: larger;
+    font-family: roboto;
+    cursor: pointer;    
+}
+
+.button-C {
+    position: absolute;
+	left: 613px;
+	top: 13%;
+    /* margin: 20px; */
+    background: #585191;
+    color: white;
+    border: none;
+    /* border-radius: 10px; */
+    padding: 10px 20px;
+    font-size: larger;
+    font-family: roboto;
+    cursor: pointer;    
+}
+
+.button-D {
+    position: absolute;
+	left: 710px;
+	top: 13%;
+    /* margin: 20px; */
+    background: #585191;
+    color: white;
+    border: none;
+    /* border-radius: 10px; */
+    padding: 10px 20px;
+    font-size: larger;
+    font-family: roboto;
+    cursor: pointer;    
+}
+
+.copyright {
+    position: absolute;
+	left: 45%;
+	top: 98%;
+    /* margin: 20px; */
+    color: white;   
+	font-size: 0.8em;
+    font-family: roboto;
+     
+}
+
+.button-default:hover {
+    background: darkblue;
+}
+
+.button-default:active {
+    background: black;
+}
+
+
+
+#contactForm { 
+  display: none;
+  
+  margin: 20 0 0 0;
+
+  /* border: 6px solid salmon;  */
+  padding: 2em;
+  width: 400px;
+  /* text-align: center; */
+  background: #fff;
+  position: fixed;
+  /* top:100%; */
+  /* left:50%; */
+  /* transform: translate(-50%,-50%); */
+  /* -webkit-transform: translate(-50%,-50%) */
+  
+}
+
+input, textarea { 
+  
+  margin: 10 0 10 0;
+  font-family: roboto; 
+  text-transform: roboto; 
+  font-size: roboto;
+  
+  display: block; 
+  /* background-color: red; */
+  
+  width: 300px; 
+  padding: .4em;
+  border: 0;
+  background-color: #C2C2C2
+  /* font-color: white; */
+}
+textarea { height: 80px; resize: none; }
+
+/* input[type=submit]:hover { */
+    /* background-color: #45a049; */
+
+.formBtn { 
+  width: 70px;
+  display: inline-block;
+  
+  /* background: teal; */
+  color: #fff;
+  /* font-weight: 100; */
+  font-size: 0.8em;
+  border: none;
+  margin: 30 0 0 0;
+  /* height: 30px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
