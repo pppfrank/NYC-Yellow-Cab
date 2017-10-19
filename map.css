@@ -58,7 +58,7 @@ p {
   top: 20%;
   height: 200px;
   /* margin-top: 20px; */
-  width: 190px;
+  width: 175px;
   padding: 0 10 10 10;
   left: 76%;
 }
@@ -69,7 +69,7 @@ p {
   line-height: 18px;
   height: 70px;
   /* margin-bottom: 40px; */
-  width: 190px;
+  width: 175px;
 }
 
 .legend-key {
@@ -170,10 +170,10 @@ p {
     /* margin: 20px; */
     background: white;
     color: black;
-	width: 190px;
+	width: 175px;
     border: none;
     /* border-radius: 10px; */
-    padding: 5 10 5 10;
+    padding: 0 10 0 10;
     /* font-size: larger; */
     font-family: roboto;
     cursor: pointer;    

@@ -146,7 +146,7 @@ map.on('load', function() {	// the event listener that does some code after the 
 
       // Set the contents of the popup window
       popup.setHTML('<h2><p>Tip amount:  '  + amount.properties.tip_amount // 'stop_id' field of the dataset will become the title of the popup
-                           + '</p><p>Total amount:  ' + amount.properties.total_amount// 'stop_name' field of the dataset will become the body of the popup
+                           + '</p><p>Trip amount:  ' + amount.properties.trip_amount// 'stop_name' field of the dataset will become the body of the popup
                            + '</p><h2>');
 
       // Add the popup to the map
